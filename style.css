@@ -33,6 +33,7 @@ html, body{
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -110,6 +111,20 @@ main{
     width: 100%;
 }
 
+.photoPart .annotation{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+
+.photoPart .annotation a{
+    color: #FFF;
+}
+
+
 .photoPart .logo img {
     width: 5rem;
 }
@@ -118,4 +133,9 @@ main{
     color: #FFF;
     font-family: 'Norse', serif;
     font-size: 5rem;
+}
+
+.formPart p{
+    font-weight: 500;
+    max-inline-size: 50ch;
 }
