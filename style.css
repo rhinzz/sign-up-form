@@ -3,6 +3,15 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -84,5 +93,29 @@ main{
 .photoPart{
     background: url("./assets/djordje-djordjevic-LPTQ4ZZnUSA-unsplash.jpg") no-repeat;
     background-size: cover;
+    position: relative;
     width: 40%;
+}
+
+.photoPart .logo{
+    background-color: #222;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 15%;
+    opacity: 80%;
+    width: 100%;
+}
+
+.photoPart .logo img {
+    width: 5rem;
+}
+
+.photoPart .logo h1{
+    color: #FFF;
+    font-family: 'Norse', serif;
+    font-size: 5rem;
 }
