@@ -189,7 +189,7 @@ form .inputBox .row label {
 }
 
 form .inputBox .row input {
-    border: 1px solid #E5E7EB;
+    border: 1px solid #d0d1d4;
     border-radius: 0.25rem;
     outline: none;
     padding: 0.5rem;
@@ -204,7 +204,7 @@ form .inputBox .row input:focus {
     box-shadow: 10px 6px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-form .inputBox .row input:invalid {
+form .inputBox .row input:required:focus {
     border-color: red;
 }
 
