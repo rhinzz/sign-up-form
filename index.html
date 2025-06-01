@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..28,100..900;1,14..28,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/odin-lined.png" type="image/x-icon">
@@ -23,17 +23,59 @@
                 <h1>Odin</h1>
             </div>
             <div class="annotation">
-                <p>Photo by <a href="https://unsplash.com/@oddgraphy" target="_blank" rel="noopener noreferrer">Djordje Djordjevic</a> on <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+                <p>Photo by <a href="https://unsplash.com/@oddgraphy" target="_blank" rel="noopener noreferrer">Djordje
+                        Djordjevic</a> on <a href="https://unsplash.com" target="_blank"
+                        rel="noopener noreferrer">Unsplash</a></p>
             </div>
         </section>
         <section class="formPart">
             <form>
-                <p>
-                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
-                </p>
-                <p>
-                    You <em>know</em> you want to.
-                </p>
+                <div class="textBox">
+                    <p>
+                        This is not a real online service! You know you need something like this in your life to help
+                        you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+                    </p>
+                    <p>
+                        You <em>know</em> you want to.
+                    </p>
+                </div>
+                <div class="inputBox">
+                    <p>Let's do this!</p>
+                    <div class="row">
+                        <p>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" size="28" name="first_name">
+                        </p>
+                        <p>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" size="28" name="last_name">
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" size="28" name="email">
+                        </p>
+                        <p>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" size="28" name="phone_number">
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" size="28" name="password" required>
+                        </p>
+                        <p>
+                            <label for="confirmPwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPwd" size="28" required>
+                        </p>
+                    </div>
+                </div>
+                <div class="submitBox">
+                    <button type="submit">Create Account</button>
+                    <p class="login">Already have an account? <a href="#">Login</a></p>
+                </div>
             </form>
         </section>
     </main>

@@ -28,7 +28,8 @@
     }
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
@@ -36,6 +37,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 img,
@@ -82,24 +84,25 @@ h6 {
     isolation: isolate;
 }
 
-main{
+main {
     display: flex;
 }
 
-.photoPart, .formPart{
+.photoPart,
+.formPart {
     width: 100%;
     height: 100vh;
 }
 
-.photoPart{
+.photoPart {
     background: url("./assets/djordje-djordjevic-LPTQ4ZZnUSA-unsplash.jpg") no-repeat;
     background-size: cover;
     position: relative;
     width: 40%;
 }
 
-.photoPart .logo{
-    background-color: #222;
+.photoPart .logo {
+    background: #222;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
@@ -111,7 +114,7 @@ main{
     width: 100%;
 }
 
-.photoPart .annotation{
+.photoPart .annotation {
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -120,7 +123,7 @@ main{
     width: 100%;
 }
 
-.photoPart .annotation a{
+.photoPart .annotation a {
     color: #FFF;
 }
 
@@ -129,13 +132,104 @@ main{
     width: 5rem;
 }
 
-.photoPart .logo h1{
+.photoPart .logo h1 {
     color: #FFF;
     font-family: 'Norse', serif;
     font-size: 5rem;
 }
 
-.formPart p{
-    font-weight: 500;
+.formPart {
+    background: #F9FAFB;
+}
+
+form > div {
+    padding: 2rem 3rem;
+}
+
+form p {
+    font-size: 1.25rem;
+    font-weight: 600;
     max-inline-size: 50ch;
+}
+
+form .textBox p:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+
+form .inputBox {
+    background: #FFF;
+    box-shadow: 0px 10px 6px -2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+form .inputBox p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+form .inputBox .row {
+    display: flex;
+    gap: 4rem;
+}
+
+form .inputBox .row p {
+    font-size: 0.8rem;
+}
+
+form .inputBox .row label {
+    font-weight: 400;
+    letter-spacing: 1.15px;
+    display: block;
+}
+
+form .inputBox .row input {
+    border: 1px solid #E5E7EB;
+    border-radius: 0.25rem;
+    outline: none;
+    padding: 0.5rem;
+}
+
+form .inputBox .row input:focus,
+form .inputBox .row input:hover {
+    border: 1px solid blue;
+}
+
+form .inputBox .row input:focus {
+    box-shadow: 10px 6px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+form .inputBox .row input:invalid {
+    border-color: red;
+}
+
+form .submitBox button {
+    color: #FFF;
+    cursor: pointer;
+    background: #596D48;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 3rem;
+}
+
+form .submitBox button:hover {
+    background: #FFF;
+    border: 2px solid #596D48;
+    color: #596D48;
+    transition: 0.1s ease-in-out;
+}
+
+form .submitBox .login {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+form .submitBox a {
+    color: #596D48;
+    font-weight: 600;
+    text-decoration: none;
 }
