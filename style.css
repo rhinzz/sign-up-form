@@ -196,7 +196,7 @@ form .inputBox .row input {
 }
 
 form .inputBox .row input:focus,
-form .inputBox .row input:hover {
+form .inputBox .row input:hover{
     border: 1px solid blue;
 }
 
@@ -204,7 +204,12 @@ form .inputBox .row input:focus {
     box-shadow: 10px 6px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-form .inputBox .row input:required:focus {
+form .inputBox .row input:valid,
+form .inputBox .row input:focus:valid {
+    border: 1px solid #d0d1d4;
+}
+
+form .inputBox .row input:focus:invalid {
     border-color: red;
 }
 
