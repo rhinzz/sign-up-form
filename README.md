@@ -21,4 +21,4 @@ Simple sign up form project from The Odin Project.
 
 ## Link
 
-[Sign Up](#)
+[Sign Up](https://rhinzz.github.io/sign-up-form/)
